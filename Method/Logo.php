@@ -7,6 +7,8 @@ use GDO\TCPDF\Module_TCPDF;
 
 final class Logo extends Method
 {
+	public function showInSitemap() { return false; }
+	
 	public function execute()
 	{
 		if ($fileId = Module_TCPDF::instance()->cfgLogoId())
