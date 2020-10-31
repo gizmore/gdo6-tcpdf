@@ -2,7 +2,7 @@
 namespace GDO\TCPDF;
 
 use GDO\Address\GDO_Address;
-use GDO\User\GDO_Session;
+use GDO\Session\GDO_Session;
 use GDO\Address\GDT_Address;
 
 Module_TCPDF::instance()->includeTCPDF();
