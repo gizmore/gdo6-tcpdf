@@ -27,6 +27,8 @@ final class Module_TCPDF extends GDO_Module
 	
 	public function onLoadLanguage() { return $this->loadLanguage('lang/tcpdf'); }
 	
+	public function thirdPartyFolders() { return ['/TCPDF/']; }
+	
 	##############
 	### Config ###
 	##############
