@@ -2,6 +2,7 @@
 namespace GDO\TCPDF;
 
 use GDO\Core\GDO_Module;
+use GDO\Core\GDT_Array;
 use GDO\File\GDT_ImageFile;
 use GDO\File\GDO_File;
 use GDO\File\FileUtil;
@@ -46,5 +47,10 @@ final class Module_TCPDF extends GDO_Module
 	public function cfgLogo() { return $this->getConfigValue('pdf_top_logo'); }
 	public function cfgLogoId() { return $this->getConfigVar('pdf_top_logo'); }
 	public function cfgLogoHeight() { return $this->getConfigVar('pdf_top_logo_height'); }
+	
+	public function hookIgnoreDocsFiles(GDT_Array $ignore)
+	{
+	    $ignore->data[] = 'GDO/TCPDF/TCPDF/**/*';
+	}
 	
 }
