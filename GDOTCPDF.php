@@ -57,7 +57,7 @@ class GDOTCPDF extends \TCPDF
 	##############
 	### Header ###
 	##############
-	public $pdftitle = GWF_SITENAME;
+	public $pdftitle = GDO_SITENAME;
 	public function title($title) { $this->pdftitle = $title; }
 	
 	public $subtitle = '';
