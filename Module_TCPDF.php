@@ -36,7 +36,7 @@ final class Module_TCPDF extends GDO_Module
 	public function getConfig()
 	{
 		return array(
-			GDT_ImageFile::make('pdf_top_logo')->previewHREF(href('TCPDF', 'Logo', "&id=")),
+			GDT_ImageFile::make('pdf_top_logo')->previewHREF(href('TCPDF', 'Logo', "&id={id}")),
 			GDT_UInt::make('pdf_top_logo_height')->notNull()->initial('0'),
 		);
 	} 
